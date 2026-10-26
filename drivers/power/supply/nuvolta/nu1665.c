@@ -4841,7 +4841,7 @@ static int nu1665_get_prop(struct power_supply *psy,
 		} else {
 			val->intval = last_valid_pen_soc;
 			if (val->intval)
-				nuvolta_err("report last valid pen soc: %d\n",
+				nuvolta_dbg("report last valid pen soc: %d\n",
 					    val->intval);
 		}
 		break;

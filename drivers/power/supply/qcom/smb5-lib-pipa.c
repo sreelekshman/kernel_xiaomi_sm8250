@@ -3822,9 +3822,9 @@ int smblib_night_charging_func(struct smb_charger *chg,
 	capacity = pval.intval;
 	rc = smblib_get_prop_battery_input_suspend(chg, &pval);
 	battery_input_suspend = pval.intval;
-	pr_info("nchg_func:capacity:%d, battery_input_suspend:%d.\n",
+	pr_debug("nchg_func:capacity:%d, battery_input_suspend:%d.\n",
 			capacity, battery_input_suspend);
-	pr_info("nchg_func:pre_nchg:%d, nchg:%d.\n",
+	pr_debug("nchg_func:pre_nchg:%d, nchg:%d.\n",
 			pre_night_chg_flag, chg->night_chg_flag);
 
 	if (pre_night_chg_flag != chg->night_chg_flag) {
